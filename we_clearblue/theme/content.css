@@ -6,7 +6,7 @@
  */
 .forabg,
 .forumbg,
-#cp-main table.table1 {
+.cp-main table.table1 {
 	margin-bottom: 15px;
 	padding: 0;
 	border-bottom: 3px solid #cacaca;
@@ -31,7 +31,7 @@ table.table1 tbody tr {
 }
 
 li.row,
-#cp-main .panel li.row,
+.cp-main .panel li.row,
 table.table1 tbody tr {
 	border-top: 1px solid #fff;
 	border-bottom: 0;
@@ -143,7 +143,7 @@ dd.moderation span {
 ul.topiclist li.header dt,
 ul.topiclist li.header dd,
 table.table1 thead th,
-#cp-main table.table1 thead th {
+.cp-main table.table1 thead th {
 	padding: 9px 7px;
 	text-align: center;
 	vertical-align: middle;
@@ -156,12 +156,11 @@ table.table1 thead th,
 	width: auto;
 }
 
-li.header dl.icon dt .list-inner,
+li.header dl.row-item dt .list-inner,
 ul.topiclist dt .list-inner,
 ul.topiclist.missing-column dt .list-inner,
 ul.topiclist.two-long-columns dt .list-inner {
 	margin: 0;
-	padding: 0;
 }
 
 /* Subforums list on index */
@@ -172,7 +171,6 @@ ul.topiclist li.row a.subforum {
 }
 
 ul.topiclist li.row a.subforum:before {
-	content: "\f07b";
 	display: inline-block;
 	margin-right: 4px;
 	padding-left: 1px;
@@ -230,9 +228,9 @@ dd.redirect {
 
 /* Action-bars (container for post/reply buttons, pagination, etc.) */
 .action-bar {
-	margin-bottom: 8px;
-	line-height: 18px;
-	font-size: 12px;
+	margin-bottom: 9px;
+	line-height: 19px;
+	font-size: 13px;
 }
 
 /**
@@ -262,7 +260,7 @@ table.table1 td {
 	text-align: center;
 }
 
-#cp-main table.table1 thead th {
+.cp-main table.table1 thead th {
 	border-bottom: 0;
 	color: #fff;
 	text-align: left;
@@ -514,72 +512,72 @@ p.author {
 }
 
 /* Private message */
-#cp-main .post {
+.cp-main .post {
 	border-radius: 7px;
 }
 
-#cp-main .post .postbody:before {
+.cp-main .post .postbody:before {
 	content: none;
 }
 
-#cp-main .postbody p {
+.cp-main .postbody p {
 	font-size: 12px;
 }
 
 /* Post message preview (posting.php) */
-#postform .content {
+.postform .content {
 	padding: 10px 18px;
 	border-radius: 7px;
 }
 
 /* Poll preview background */
-.section-posting #preview .content {
+.section-posting .preview .content {
 	background: #e1ebf5;
 }
 
-#postform .content .author {
+.postform .content .author {
 	margin-bottom: 12px;
 	padding: 0;
 	border-bottom: 0;
 }
 
-#postform .postbody,
-#topicreview .postbody {
+.postform .postbody,
+.topicreview .postbody {
 	padding-bottom: 18px;
 	border-radius: 7px;
 }
 
-#topicreview .postbody {
+.topicreview .postbody {
 	width: 100%;
 }
 
-#postform .postbody:before {
+.postform .postbody:before {
 	content: none;
 }
 
-#postform .postbody h3 {
+.postform .postbody h3 {
 	margin-bottom: 9px !important;
 	padding-bottom: 9px;
 	border-bottom: 1px dotted #c2c2c2;
 }
 
-#postform .postbody .content {
+.postform .postbody .content {
 	padding: 0;
 	border-radius: 0;
 }
 
 /* Topic review */
-#topicreview .postbody h3 {
+.topicreview .postbody h3 {
 	margin: 0 !important;
 	padding: 0;
 	border: 0;
 }
 
-#topicreview .content {
+.topicreview .content {
 	background: inherit;
 }
 
-#topicreview .postbody .right-box {
+.topicreview .postbody .right-box {
 	margin-right: 5px;
 	line-height: 28px;
 }
@@ -893,11 +891,11 @@ a.postlink:hover {
 /**
  * Memberlist
  */
-#search_memberlist {
+.search_memberlist {
 	margin-bottom: 28px;
 }
 
-#search_memberlist .panel {
+.search_memberlist .panel {
 	padding-top: 8px;
 }
 
@@ -908,27 +906,27 @@ a.postlink:hover {
 }
 
 .section-memberlist .panel + .forumbg,
-#simple-wrap .panel + .forumbg {
+.simple-wrap .panel + .forumbg {
 	margin-top: 7px;
 }
 
 .section-memberlist .panel ul.linklist li strong,
-#simple-wrap .panel ul.linklist li strong {
+.simple-wrap .panel ul.linklist li strong {
 	font-size: 12px !important;
 }
 
 /* Viewprofile */
-#viewprofile .postbody {
+.viewprofile .postbody {
 	width: auto;
 }
 
-#viewprofile .inventea-profile {
+.viewprofile .inventea-profile {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	line-height: 18px;
 }
 
-#viewprofile .signature {
+.viewprofile .signature {
 	margin-bottom: 10px;
 	color: #414141;
 	line-height: 18px;
@@ -1009,8 +1007,8 @@ hr + .topic-actions {
 }
 
 /* Forums layout related links */
-#search-box a:hover,
-#search-box a:active,
+.search-box a:hover,
+.search-box a:active,
 .navbg a:hover,
 .navbg a:active,
 .forumbg .header a:hover,

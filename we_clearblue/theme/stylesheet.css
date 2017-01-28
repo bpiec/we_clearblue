@@ -5,11 +5,13 @@
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
 	Modified by:		phpBB Limited ( https://www.phpbb.com/ )
 	Modified by:		INVENTEA ( https://inventea.com/ )
+	Modified by:		nextgen ( http://xeronix.org/ )
+	Modified by:		bpiec
     --------------------------------------------------------------
 */
 
-@import url("font-awesome.min.css");
 @import url("common.css");
 @import url("content.css");
 @import url("cp.css");
 @import url("forms.css");
+@import url("responsive.css");

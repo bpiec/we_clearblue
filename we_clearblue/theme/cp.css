@@ -1,18 +1,18 @@
 /**
  * User Control Panel and Moderator Control Panel
  */
-#tabs + .panel,
-#attach-panel,
-#poll-panel,
-.section-ucp #postform > .panel.bg3 {
+.tabs + .panel,
+.attach-panel,
+.poll-panel,
+.section-ucp .postform > .panel.bg3 {
 	border-top-left-radius: 0;
 }
 
-#tabs {
+.tabs {
 	margin-left: 0;
 }
 
-#tabs .tab > a {
+.tabs .tab > a {
 	margin-top: 0;
 	padding: 11px;
 	border: 0;
@@ -22,53 +22,68 @@
 	color: #536482;
 }
 
-#tabs .tab > a:hover,
-#tabs .tab > a:active {
+.tabs .tab > a:hover,
+.tabs .tab > a:active {
 	background: #d0e0f0;
 	color: #bc2a4d;
 }
 
-#tabs .activetab > a,
-#tabs .activetab > a:hover {
+.tabs .activetab > a,
+.tabs .activetab > a:hover {
 	box-shadow: none;
 	border-bottom: 1px solid #e1ebf5;
 	background: #e1ebf5;
 	color: #333;
 }
 
-#tabs .activetab > a:hover,
-#tabs .activetab > a:active {
+.tabs .activetab > a:hover,
+.tabs .activetab > a:active {
 	color: #bc2a4d;
 }
 
 /* Subsection navigation */
-#navigation {
+.navigation {
 	padding-top: 38px;
 }
 
-#navigation a {
+.navigation a {
 	padding: 8px 6px;
 	background: #cad9e5;
 	color: #333;
 }
 
-#navigation a:hover,
-#navigation a:active {
+.rtl .navigation a {
+	background: #ccc; /* Old browsers */ /* FF3.6+ */
+}
+
+.navigation a:hover,
+.navigation a:active {
 	background: #bacedd;
 	color: #bc2a4d;
 }
 
-#navigation #active-subsection a,
-#navigation #active-subsection a:hover {
+.navigation .active-subsection a {
+	background: #F9F9F9;
 	color: #bc2a4d;
 }
 
+.navigation .active-subsection a:hover {
+	color: #bc2a4d;
+}
+
+@media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
+{
+	#navigation a, .rtl #navigation a {
+		background: #CCC;
+	}
+}
+
 /* MCP mini tabs */
-#minitabs {
+.minitabs {
 	margin-top: 8px;
 }
 
-#minitabs .tab > a {
+.minitabs .tab > a {
 	display: block;
 	padding: 8px;
 	border-radius: 0;
@@ -76,15 +91,15 @@
 	color: #333;
 }
 
-#minitabs .tab > a:hover,
-#minitabs .tab > a:active {
+.minitabs .tab > a:hover,
+.minitabs .tab > a:active {
 	background: #bacedd;
 	color: #bc2a4d;
 }
 
-#minitabs .activetab > a,
-#minitabs .activetab > a:focus,
-#minitabs .activetab > a:hover {
+.minitabs .activetab > a,
+.minitabs .activetab > a:focus,
+.minitabs .activetab > a:hover {
 	background: #f9f9f9;
 	color: #bc2a4d !important;
 }
@@ -114,39 +129,39 @@ dl.mini dt {
 }
 
 /* Inside panels */
-#cp-main h3,
-#cp-main hr,
-#cp-menu hr {
+.cp-main h3,
+.cp-main hr,
+.cp-menu hr {
 	border-color: #b7c9d7;
 }
 
-#cp-main .panel {
+.cp-main .panel {
 	clear: both;
 	padding-top: 8px;
 }
 
-#cp-main .panel p {
+.cp-main .panel p {
 	font-size: 12px;
 }
 
-#cp-main .panel + fieldset.submit-buttons {
+.cp-main .panel + fieldset.submit-buttons {
 	margin-top: 10px;
 }
 
-#cp-main fieldset.display-actions {
+.cp-main fieldset.display-actions {
 	margin-top: 10px;
 	padding-right: 0;
 }
 
-#cp-main fieldset.display-actions div {
+.cp-main fieldset.display-actions div {
 	margin-top: 4px;
 }
 
-#cp-main fieldset.display-actions .left-box {
+.cp-main fieldset.display-actions .left-box {
 	margin-top: 0;
 }
 
-#cp-main fieldset.forum-selection {
+.cp-main fieldset.forum-selection {
 	margin-top: 0;
 	margin-bottom: 8px;
 }
@@ -172,9 +187,9 @@ ul.cplist {
 }
 
 /* Forum/topic lists */
-#cp-main .panel li.header dd,
-#cp-main .panel li.header dt,
-#cp-main .panel li.header a {
+.cp-main .panel li.header dd,
+.cp-main .panel li.header dt,
+.cp-main .panel li.header a {
 	color: #fff;
 }
 
@@ -198,10 +213,6 @@ ul.cplist {
 	padding-left: 55px;
 }
 
-.section-ucp ul.topiclist li.row dt {
-	background: transparent !important;
-}
-
 .section-ucp ul.topiclist .bg1,
 .section-mcp ul.topiclist .bg1 {
 	background-color: #f2f2f2;
@@ -222,21 +233,21 @@ dd.mark {
 }
 
 /* Private messages list */
-#cp-main .buttons {
+.cp-main .buttons {
 	margin-bottom: 8px;
 }
 
-#cp-main ul.linklist .pagination {
+.cp-main ul.linklist .pagination {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
-#viewfolder ul.topiclist,
-#cp-main ul.linklist + p {
+.viewfolder ul.topiclist,
+.cp-main ul.linklist + p {
 	clear: both;
 }
 
-#viewfolder ul.topiclist li.header dt {
+.viewfolder ul.topiclist li.header dt {
 	width: 100%;
 	padding-left: 55px;
 }

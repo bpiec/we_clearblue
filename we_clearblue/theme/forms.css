@@ -183,6 +183,18 @@ input.button3:active {
 	color: #bc2a4d;
 }
 
+.button:hover,
+.button:focus {
+	border-color: #bc2a4d;
+}
+
+.button-secondary:focus,
+.button-secondary:hover,
+.button:focus .icon,
+.button:hover .icon {
+	color: #bc2a4d;
+}
+
 /* Remove unnecessary padding from buttons in Firefox */
 a.button1::-moz-focus-inner,
 input.button1::-moz-focus-inner,
@@ -229,8 +241,8 @@ input.search {
 }
 
 /* UCP */
-#timezone,
-#dateformat {
+.timezone,
+.dateformat {
 	margin-top: 8px !important;
 }
 
@@ -245,20 +257,20 @@ input.search {
 	margin-left: 23%;
 }
 
-#format-buttons {
+.format-buttons {
 	margin-bottom: 6px;
 }
 
-#smiley-box {
+.smiley-box {
 	width: 19%;
 }
 
-#options-panel,
-#attach-panel,
-#poll-panel {
+.options-panel,
+.attach-panel,
+.poll-panel {
 	padding-top: 12px;
 }
 
-.pmlist #username_list {
+.pmlist .username_list {
 	height: 78px;
 }

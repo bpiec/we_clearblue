@@ -54,14 +54,12 @@ hr {
 	margin-bottom: 8px;
 }
 
-a:link,
-a:visited {
+a {
 	color: #105289;
 }
 
 a:focus,
-a:hover,
-a:active {
+a:hover {
 	text-decoration: underline;
 	color: #bc2a4d;
 }
@@ -74,7 +72,7 @@ a:active {
  * to fixed width, remove below "max-width" property and set desired width. Next
  * remove links to both responsive.css files in overall_header.html.
  */
-#wrap {
+.wrap {
 	max-width: none;
 	min-width: 0;
 	margin: 0;
@@ -212,10 +210,21 @@ ul.linklist .icon-notification strong {
 }
 
 /* Small avatar near username */
-.header-avatar img {
-	max-height: 19px;
-	margin: -2px 3px 0 0;
+a.header-avatar,
+a.header-avatar:hover {
+	text-decoration: none;	
 	border-radius: 3px;
+}
+
+a.header-avatar img {
+ 	margin-bottom: 2px;
+ 	max-height: 20px;
+ 	vertical-align: middle;
+ 	width: auto;
+}
+
+a.header-avatar span:after {
+    padding-top: 0;
 }
 
 .header-profile > a > .username {
@@ -456,7 +465,7 @@ p.rules img {
 }
 
 /* Disabled board information */
-#information {
+.information {
 	margin-top: 0;
 	margin-bottom: 24px;
 }
@@ -501,4 +510,19 @@ p.rules img {
 	border-color: #bc2a4d;
 	background-color: #bc2a4d;
 	color: #fff;
+}
+
+.pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	background: #bc2a4d;
+	border-color: #bc2a4d;
+	filter: none;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+
+/**
+* Button padding in fieldset
+*/
+fieldset.fields1 ul.recipients  input.button2{
+	padding: 0 10px;
 }
