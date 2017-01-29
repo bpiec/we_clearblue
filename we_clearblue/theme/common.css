@@ -298,6 +298,26 @@ ul.linklist.inventea-forum-menu li.responsive-menu a.responsive-menu-link:before
 	border-color: #fff;
 }
 
+/* Responsive menu hamburger link */
+ul.linklist li.responsive-menu {
+	margin: 0 2px;
+}
+
+ul.linklist li.responsive-menu a.responsive-menu-link {
+	margin: 0 1px;
+	line-height: 18px;
+}
+
+ul.linklist li.responsive-menu a.responsive-menu-link:before {
+	top: 5px;
+	border-color: #525252;
+}
+
+ul.linklist li.responsive-menu a.responsive-menu-link:hover:before,
+ul.linklist li.responsive-menu.visible a.responsive-menu-link:before {
+	border-color: #bc2a4d;
+}
+
 /**
  * Forum name and description
  */
