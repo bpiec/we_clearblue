@@ -5,7 +5,7 @@
 ============================================================================
 
 we_clearblue is a modern style in pastel colours with integrated image slider
-and social buttons in footer (hidden by default). Dedicated for phpBB 3.0.12.
+and social buttons in footer (hidden by default). Dedicated for phpBB 3.2.0.
 It uses principles of flat design and Responsive Web Design technique. Built
 with HTML5 & CSS3. Fits great on desktops and various mobile devices. Suitable
 for any kind of forum communities. Compatible with all major browsers.
