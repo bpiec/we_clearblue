@@ -1,4 +1,4 @@
-![we_clearblue for phpBB 3.0.12](http://inventea.com/images/we_clearblue.png)
+![we_clearblue for phpBB 3.2.0](http://inventea.com/images/we_clearblue.png)
 
 
 [we_clearblue](http://inventea.com/en/projects/we_clearblue) style for phpBB
@@ -39,6 +39,5 @@ click *Install* on the list of uninstalled styles. In the next step check
 Assets
 ------
 
-* [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.3.0
 * [jQuery](http://jquery.com) 2.1.3
 * [slick](http://kenwheeler.github.io/slick/) 1.3.15
